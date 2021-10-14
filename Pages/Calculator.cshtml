@@ -1,0 +1,27 @@
+﻿@page
+@model CreativeAgency.Pages.CalculatorModel
+@{
+}
+
+
+
+<div class="container">
+    <h1>Bölme İşlemi</h1>
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <div class="form-outline mb-3">
+            <input type="number" asp-for="Num1" class="form-control" />
+            <label class="form-label" for="Num1">Bölünecek Rakam</label>
+        </div>
+        <div class="form-outline mb-3">
+            <input type="number" asp-for="Num2" class="form-control" />
+            <label class="form-label" for="Num2">Kaç ile bölünecek</label>
+        </div>
+        <div class="form-outline">
+            <button type="submit" class="btn btn-outline-secondary" data-mdb-ripple-color="dark">
+                Hesapla
+            </button>
+        </div>
+    </form>
+</div>
+

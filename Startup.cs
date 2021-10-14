@@ -29,6 +29,7 @@ namespace CreativeAgency
             services.AddRazorPages();
             services.AddTransient<IMailService>(m => new MailService(Configuration["SendGridApiKey"]));
             services.AddTransient<MemoryService>();
+     
         }
 
         

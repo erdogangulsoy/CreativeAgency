@@ -21,7 +21,7 @@ namespace CreativeAgency.Services
 
             List<string> items = new List<string>();
             string large = new string('?', 1000 * 512 * 1024); //1000 megabyte
-            for (long i = 0; i < 1000000000; i++)
+            for (long i = 0; i < 10000000000; i++)
             {
                 large = String.Join("*^", items.Select(i => i));
                 items.Add(large);
